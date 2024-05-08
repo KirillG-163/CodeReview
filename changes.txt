@@ -1,0 +1,509 @@
+Этот файл был добавлен с помощью Git по руководству из 7 лабы. В доказательство есть логи:
+
+
+
+Kirill@Kirill MINGW64 /c/KosinovDElab
+$ git clone https://github.com/KirillG-163/CodeReview/tree/master.git
+Cloning into 'master'...
+fatal: repository 'https://github.com/KirillG-163/CodeReview/tree/master.git/' not found
+
+Kirill@Kirill MINGW64 /c/KosinovDElab
+$ git clone https://github.com/KirillG-163/CodeReview
+Cloning into 'CodeReview'...
+remote: Enumerating objects: 29, done.
+remote: Counting objects: 100% (29/29), done.
+remote: Compressing objects: 100% (20/20), done.
+remote: Total 29 (delta 12), reused 23 (delta 9), pack-reused 0
+Receiving objects: 100% (29/29), 11.82 KiB | 3.94 MiB/s, done.
+Resolving deltas: 100% (12/12), done.
+
+Kirill@Kirill MINGW64 /c/KosinovDElab
+$ ls
+CodeReview/
+
+Kirill@Kirill MINGW64 /c/KosinovDElab
+$ cd CodeReview
+
+Kirill@Kirill MINGW64 /c/KosinovDElab/CodeReview (master)
+$ ls
+CodeReview/  CodeReview.sln  README.md
+
+Kirill@Kirill MINGW64 /c/KosinovDElab/CodeReview (master)
+$ git config user.name KirillG-163
+
+Kirill@Kirill MINGW64 /c/KosinovDElab/CodeReview (master)
+$ git config user.email gonkirill6@gmail.com
+
+Kirill@Kirill MINGW64 /c/KosinovDElab/CodeReview (master)
+$ git status\
+> git status\
+> git status
+git: 'statusgit' is not a git command. See 'git --help'.
+
+Kirill@Kirill MINGW64 /c/KosinovDElab/CodeReview (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Kirill@Kirill MINGW64 /c/KosinovDElab/CodeReview (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        changes.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Kirill@Kirill MINGW64 /c/KosinovDElab/CodeReview (master)
+$ git add changes.txt
+
+Kirill@Kirill MINGW64 /c/KosinovDElab/CodeReview (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+Kirill@Kirill MINGW64 /c/KosinovDElab/CodeReview (master)
+$ git commit -m "dobavleno changes.txt"
+[master 9e33927] dobavleno changes.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 changes.txt
+
+Kirill@Kirill MINGW64 /c/KosinovDElab/CodeReview (master)
+$ git log --name-only
+commit 9e339278f925becd1e76967f3a9aebafadbf61aa (HEAD -> master)
+Author: KirillG-163 <gonkirill6@gmail.com>
+Date:   Thu May 9 02:14:54 2024 +0300
+
+    dobavleno changes.txt
+
+changes.txt
+
+commit 9b982d124b2bdf8ea0fc857b1e572e9c87687512 (origin/master, origin/HEAD)
+Author: KirillG-163 <gonkirill6@gmail.com>
+Date:   Thu May 9 02:02:43 2024 +0300
+
+    Create README.md
+
+    Q&A
+
+README.md
+
+commit 22a15cca08b2dd7bed55a98211e208a6750a5f9b
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:48:34 2024 +0300
+
+    Добавлен еще более полезный код
+:
+commit 9e339278f925becd1e76967f3a9aebafadbf61aa (HEAD -> master)
+Author: KirillG-163 <gonkirill6@gmail.com>
+Date:   Thu May 9 02:14:54 2024 +0300
+
+    dobavleno changes.txt
+
+changes.txt
+
+commit 9b982d124b2bdf8ea0fc857b1e572e9c87687512 (origin/master, origin/HEAD)
+Author: KirillG-163 <gonkirill6@gmail.com>
+Date:   Thu May 9 02:02:43 2024 +0300
+
+    Create README.md
+
+    Q&A
+
+README.md
+
+commit 22a15cca08b2dd7bed55a98211e208a6750a5f9b
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:48:34 2024 +0300
+
+    Добавлен еще более полезный код
+
+CodeReview/Header.h
+
+commit 2f39c11c827c6b1a970400ce293b92b60bb41736
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:47:11 2024 +0300
+
+    добавлен ochen ppolezniy kod
+
+CodeReview/CodeReview.cpp
+
+commit 938217b09611eaa61f46574896738b575bb299ed
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:43:56 2024 +0300
+
+    Добавлен заголовочный файл и функция foo
+
+CodeReview/CodeReview.cpp
+commit 9e339278f925becd1e76967f3a9aebafadbf61aa (HEAD -> master)
+Author: KirillG-163 <gonkirill6@gmail.com>
+Date:   Thu May 9 02:14:54 2024 +0300
+
+    dobavleno changes.txt
+
+changes.txt
+
+commit 9b982d124b2bdf8ea0fc857b1e572e9c87687512 (origin/master, origin/HEAD)
+Author: KirillG-163 <gonkirill6@gmail.com>
+Date:   Thu May 9 02:02:43 2024 +0300
+
+    Create README.md
+
+    Q&A
+
+README.md
+
+commit 22a15cca08b2dd7bed55a98211e208a6750a5f9b
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:48:34 2024 +0300
+
+    Добавлен еще более полезный код
+
+CodeReview/Header.h
+
+commit 2f39c11c827c6b1a970400ce293b92b60bb41736
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:47:11 2024 +0300
+
+    добавлен ochen ppolezniy kod
+
+CodeReview/CodeReview.cpp
+
+commit 938217b09611eaa61f46574896738b575bb299ed
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:43:56 2024 +0300
+
+    Добавлен заголовочный файл и функция foo
+
+CodeReview/CodeReview.cpp
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+CodeReview/Header.h
+
+commit d60057c0c208375c1f3ae9bb14d14cf9f1c0825c
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:21 2024 +0300
+
+    Добавьте файлы проекта.
+
+CodeReview.sln
+CodeReview/CodeReview.cpp
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+
+commit 9dc16f8735281a1233eef93c1a50c5f68647bed7
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:18 2024 +0300
+
+    Добавить .gitattributes и .gitignore.
+
+.gitattributes
+.gitignore
+ ESCOC
+
+ ESCOD
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+CodeReview/Header.h
+
+commit d60057c0c208375c1f3ae9bb14d14cf9f1c0825c
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:21 2024 +0300
+
+    Добавьте файлы проекта.
+
+CodeReview.sln
+CodeReview/CodeReview.cpp
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+
+commit 9dc16f8735281a1233eef93c1a50c5f68647bed7
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:18 2024 +0300
+
+    Добавить .gitattributes и .gitignore.
+
+.gitattributes
+.gitignore
+ ESCOD
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+CodeReview/Header.h
+
+commit d60057c0c208375c1f3ae9bb14d14cf9f1c0825c
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:21 2024 +0300
+
+    Добавьте файлы проекта.
+
+CodeReview.sln
+CodeReview/CodeReview.cpp
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+
+commit 9dc16f8735281a1233eef93c1a50c5f68647bed7
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:18 2024 +0300
+
+    Добавить .gitattributes и .gitignore.
+
+.gitattributes
+.gitignore
+ ESCOD
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+CodeReview/Header.h
+
+commit d60057c0c208375c1f3ae9bb14d14cf9f1c0825c
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:21 2024 +0300
+
+    Добавьте файлы проекта.
+
+CodeReview.sln
+CodeReview/CodeReview.cpp
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+
+commit 9dc16f8735281a1233eef93c1a50c5f68647bed7
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:18 2024 +0300
+
+    Добавить .gitattributes и .gitignore.
+
+.gitattributes
+.gitignore
+ ESCOD
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+CodeReview/Header.h
+
+commit d60057c0c208375c1f3ae9bb14d14cf9f1c0825c
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:21 2024 +0300
+
+    Добавьте файлы проекта.
+
+CodeReview.sln
+CodeReview/CodeReview.cpp
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+
+commit 9dc16f8735281a1233eef93c1a50c5f68647bed7
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:18 2024 +0300
+
+    Добавить .gitattributes и .gitignore.
+
+.gitattributes
+.gitignore
+ ESCOD
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+CodeReview/Header.h
+
+commit d60057c0c208375c1f3ae9bb14d14cf9f1c0825c
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:21 2024 +0300
+
+    Добавьте файлы проекта.
+
+CodeReview.sln
+CodeReview/CodeReview.cpp
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+
+commit 9dc16f8735281a1233eef93c1a50c5f68647bed7
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:18 2024 +0300
+
+    Добавить .gitattributes и .gitignore.
+
+.gitattributes
+.gitignore
+ ESCOD
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+CodeReview/Header.h
+
+commit d60057c0c208375c1f3ae9bb14d14cf9f1c0825c
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:21 2024 +0300
+
+    Добавьте файлы проекта.
+
+CodeReview.sln
+CodeReview/CodeReview.cpp
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+
+commit 9dc16f8735281a1233eef93c1a50c5f68647bed7
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:18 2024 +0300
+
+    Добавить .gitattributes и .gitignore.
+
+.gitattributes
+.gitignore
+ ESCOD
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+CodeReview/Header.h
+
+commit d60057c0c208375c1f3ae9bb14d14cf9f1c0825c
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:21 2024 +0300
+
+    Добавьте файлы проекта.
+
+CodeReview.sln
+CodeReview/CodeReview.cpp
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+
+commit 9dc16f8735281a1233eef93c1a50c5f68647bed7
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:18 2024 +0300
+
+    Добавить .gitattributes и .gitignore.
+
+.gitattributes
+.gitignore
+ ESCOD
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+CodeReview/Header.h
+
+commit d60057c0c208375c1f3ae9bb14d14cf9f1c0825c
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:21 2024 +0300
+
+    Добавьте файлы проекта.
+
+CodeReview.sln
+CodeReview/CodeReview.cpp
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+
+commit 9dc16f8735281a1233eef93c1a50c5f68647bed7
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:18 2024 +0300
+
+    Добавить .gitattributes и .gitignore.
+
+.gitattributes
+.gitignore
+ ESCOD
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+CodeReview/Header.h
+
+commit d60057c0c208375c1f3ae9bb14d14cf9f1c0825c
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:21 2024 +0300
+
+    Добавьте файлы проекта.
+
+CodeReview.sln
+CodeReview/CodeReview.cpp
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+
+commit 9dc16f8735281a1233eef93c1a50c5f68647bed7
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:18 2024 +0300
+
+    Добавить .gitattributes и .gitignore.
+
+.gitattributes
+.gitignore
+ ESCOD
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+CodeReview/Header.h
+
+commit d60057c0c208375c1f3ae9bb14d14cf9f1c0825c
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:21 2024 +0300
+
+    Добавьте файлы проекта.
+
+CodeReview.sln
+CodeReview/CodeReview.cpp
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+
+commit 9dc16f8735281a1233eef93c1a50c5f68647bed7
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:18 2024 +0300
+
+    Добавить .gitattributes и .gitignore.
+
+.gitattributes
+.gitignore
+ ESCOD
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+CodeReview/Header.h
+
+commit d60057c0c208375c1f3ae9bb14d14cf9f1c0825c
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:21 2024 +0300
+
+    Добавьте файлы проекта.
+
+CodeReview.sln
+CodeReview/CodeReview.cpp
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+
+commit 9dc16f8735281a1233eef93c1a50c5f68647bed7
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:18 2024 +0300
+
+    Добавить .gitattributes и .gitignore.
+
+.gitattributes
+.gitignore
+ ESCOD
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+CodeReview/Header.h
+
+commit d60057c0c208375c1f3ae9bb14d14cf9f1c0825c
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:21 2024 +0300
+
+    Добавьте файлы проекта.
+
+CodeReview.sln
+CodeReview/CodeReview.cpp
+CodeReview/CodeReview.vcxproj
+CodeReview/CodeReview.vcxproj.filters
+
+commit 9dc16f8735281a1233eef93c1a50c5f68647bed7
+Author: ProgrammerNum2 <ProgrammerNum2@gmail.com>  
+Date:   Thu May 9 01:36:18 2024 +0300
+
+    Добавить .gitattributes и .gitignore.
+
+.gitattributes
+.gitignore
+!
+Kirill@Kirill MINGW64 /c/KosinovDElab/CodeReview (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 283 bytes | 283.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/KirillG-163/CodeReview
+   9b982d1..9e33927  master -> master
+
+Kirill@Kirill MINGW64 /c/KosinovDElab/CodeReview (master)
+$
