@@ -2,10 +2,17 @@
 //
 
 #include <iostream>
+#include <C:\CodeReview2\CodeReview\Header.h>
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int a;
+    cin >> a;
+    cout << "Hello World!\n";
+    cout << endl;
+    foo(a);
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
