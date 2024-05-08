@@ -13,6 +13,9 @@ int main()
     cout << "Hello World!\n";
     cout << endl;
     foo(a);
+    
+    //ochen polezniy kod
+    
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
