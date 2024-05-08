@@ -7,4 +7,5 @@ void foo(int a) {
 		cout << "Hello, Coder!\t";
 
 	}
+	//cout << "\nYour namber is: " << a;
 }
